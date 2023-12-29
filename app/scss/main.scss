@@ -1,22 +1,23 @@
 @import "normalize.scss";
 @import "fonts";
 
+$tablet: 1657px;
+$mobile: 767px;
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-html {
-  overflow-x: hidden;
-  width: 100%;
-}
-
-body {
+.page {
   max-width: 1920px;
+  min-width: 320px;
   margin: 0 auto;
 
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
 }
 
 @import "blocks/header";
-@import "blocks/banner";
+@import "blocks/description";
